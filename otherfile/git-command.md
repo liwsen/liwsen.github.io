@@ -1,5 +1,4 @@
 # git使用命令
-===
 
 创建分支： $ git branch mybranch
 
@@ -21,7 +20,7 @@ commit之后，如果想撤销最近一次提交(即退回到上一次版本)并
 
 合并分支：(merge from) $ git checkout master
 
-$ git merge mybranch (merge from mybranch)
+	$ git merge mybranch (merge from mybranch)
 
 删除分支： $ git branch -d mybranch
 
@@ -47,7 +46,7 @@ $ git merge mybranch (merge from mybranch)
 
 ---
 
-rebase:
+__rebase:__
 
 	$ git checkout mybranch
 
@@ -55,7 +54,7 @@ rebase:
 
 ---
 
-举例：
+__举例：__
 
 	$ git checkout server
 	$ git rebase –onto master server client
