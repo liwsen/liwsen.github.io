@@ -4,9 +4,12 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <title>{{ page.title }}_阿木橘子</title>
 <script src="./js/seajs/sea.js"></script>
+{% include head.html %}
 </head>
 <body data-baseurl="{{ site.baseurl }}">
+{% include header.html %}
 {{ content }}
+{% include footer.html %}
 <script>
 seajs.config({
   base: "./js/",
