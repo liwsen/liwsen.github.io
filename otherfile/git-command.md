@@ -64,3 +64,12 @@ __举例：__
 	$ git merge server
 	$ git branch -d client
 	$ git branch -d server
+
+---
+
+	echo "# test" >> README.md
+	git init
+	git add README.md
+	git commit -m "first commit"
+	git remote add origin https://github.com/liwsen/test.git
+	git push -u origin master
