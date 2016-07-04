@@ -6,10 +6,21 @@
 {% include head.html %}
 </head>
 <body>
-{% include header.html %}
-{% include nav.html %}
-{{ content }}
-{% include footer.html %}
+<div id="wrapper">
+	<div class="headerWrapper">
+		{% include header.html %}
+	</div>
+	<div class="navWrapper">
+		{% include nav.html %}
+	</div>
+	<div class="mainWrapper">
+		{{ content }}
+	</div>
+	<div class="footerWrapper">
+		{% include footer.html %}
+	</div>
+</div>
+
 <script>
 seajs.config({
   base: "./js/",
