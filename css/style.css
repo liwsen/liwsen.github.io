@@ -16,10 +16,10 @@ html {overflow-y: scroll;}
 
 #wrapper{}
 
-.headerWrapper{}
+.headerWrapper{width:30%;float: left;}
 
 .navWrapper{}
 
-.mainWrapper{}
+.mainWrapper{width:70%;float: left;}
 
 .footerWrapper{}
