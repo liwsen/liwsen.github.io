@@ -25,13 +25,15 @@
 seajs.config({
   base: "./js/",
   alias: {
-    "zepto": "zepto/zepto.min.js"
+    "zepto": "zepto/zepto.min.js",
+    "zepto-fx": "zepto/fx.js"
   }
 });
 // 加载入口模块
 seajs.use(['zepto', './js/main'], function($, main){
 	Zepto(function($){
-		main.header();
+		var Main = main.init();
+		Main.header();
 	});
 });
 </script>
