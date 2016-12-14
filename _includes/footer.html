@@ -1,0 +1,13 @@
+<script src="{{ site.baseurl }}js/static/js/sea.js"></script>
+<script src="{{ site.baseurl }}js/static/js/seajs-css.js"></script>
+<script>
+	// 简单配置
+	seajs.config({
+		base: "{{ site.baseurl }}js/",
+		alias: {
+			"jquery": "static/jq/jquery-1.11.3.min"
+		}
+	});
+	// 加载入口模块
+	seajs.use("main");
+</script>

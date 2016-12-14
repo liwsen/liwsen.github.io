@@ -1,0 +1,27 @@
+---
+layout: default
+title: Home
+---
+
+<div class="contentSide col_3 col_ssm_0" style="background-image:url('{{ site.baseurl }}images/bg.jpg');">
+	<div class="name"></div>
+</div>
+<div class="content col_6 col_md_7 col_sm_8 col_ssm_12 offset_3 offset_ssm_0">
+	<div class="contentHeader"></div>
+	<div class="lists">
+		{% for post in site.posts %}
+			<div class="item row">
+				<div class="img"><img src="{{ site.baseurl }}images/img_001.jpg" alt=""></div>
+				<div class="infor">
+					<a href="{{ site.baseurl }}category.html">{{ post.category }}</a>
+					<span>{{ post.date | date_to_string }}</span>
+				</div>
+				<h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+				<div class="desc">{{ post.desc }}</div>
+				<div class="tags">
+					{{ post.tags }}
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+</div>
