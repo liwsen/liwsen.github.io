@@ -4,3 +4,4 @@ url: http://liwsen.github.io
 logo: images/logo.png
 paginate: 1
 paginate_path: "/page:num/"
+permalink: /:year/:month/:title

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>{{ site.sitename | where:"page.title","page.title" }}</title>
+	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.sitename }}{% endif %}</title>
 	{% include head.html %}
 </head>
 <body>
