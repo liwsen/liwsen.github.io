@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 阿木橘子首页
+title: 阿木橘子
 ---
 
 <div class="contentSide col_3 col_ssm_0" style="background-image:url('{{ site.baseurl }}images/bg.jpg');">
@@ -13,8 +13,8 @@ title: 阿木橘子首页
 			<div class="item row">
 				<div class="img"><img src="{{ site.baseurl }}images/img_001.jpg" alt=""></div>
 				<div class="infor">
-					<a href="{{ site.baseurl }}category.html">{{ post.category }}</a>
-					<span>{{ post.date | date_to_string }}</span>
+					<a href="{{ site.baseurl }}pages/category.html">{{ post.category }}</a>
+					<span>{{ post.date | date:"%d/%m/%Y" }}</span>
 				</div>
 				<h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
 				<div class="desc">{{ post.desc }}</div>
