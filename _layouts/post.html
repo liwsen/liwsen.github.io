@@ -4,23 +4,24 @@ layout: default
 
 <div class="content col_6 col_md_8 col_sm_10 col_ssm_12 offset_2 offset_sm_1 offset_ssm_0">
 	<div class="details">
-		<div class="title">{{ pages.title }}</div>
-		<div class="info"><span>{{ pages.category }}</span><span>{{ pages.date | date:"%d/%m/%Y" }}</span></div>
+		<div class="title">{{ page.title }}</div>
+		<div class="info"><span>{{ page.category }}</span><span>{{ page.date | date:"%d/%m/%Y" }}</span></div>
 		<div class="detail">
 			{{ content }}
+
+			<div class="relatedBlock">
+			  <h2>Related Posts</h2>
+			  <ul class="posts">
+			    {% for post in site.related_posts limit:3 %}
+					<li>
+						<span>{{ post.date | date:"%d/%m/%Y" }}</span>
+						<a href="{{ post.url }}">{{ post.title }}</a>
+						<div class="desc">{{ post.desc }}</div>
+					</li>
+			    {% endfor %}
+			  </ul>
+			</div>
+
 		</div>
 	</div>
-</div>
-
-<div id="related">
-  <h2>Related Posts</h2>
-  <ul class="posts">
-    {% for post in site.related_posts limit:3 %}
-		<li>
-			<span>{{ post.date | date:"%d/%m/%Y" }}</span>
-			<a href="{{ post.url }}">{{ post.title }}</a>
-			<div class="desc">{{ post.desc }}</div>
-		</li>
-    {% endfor %}
-  </ul>
 </div>

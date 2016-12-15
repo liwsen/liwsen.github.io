@@ -1,5 +1,5 @@
 <div class="menuSide">
-	<h1 class="logo"><img src="{{ site.baseurl }}{{ site.logo }}" alt="{{ site.sitename }}"><strong>{{ site.sitename }}</strong></h1>
+	<h1 class="logo"><img src="{{ site.baseurl }}{{ site.logo }}" alt="{{ site.sitename }}"><strong>{% if page.title %}{{ page.title }}{% else %}{{ site.sitename }}{% endif %}</strong></h1>
 	<div id="menu_btn"></div>
 	<div id="menu">
 		{% include nav.html %}
