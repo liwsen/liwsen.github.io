@@ -1,7 +1,8 @@
 # http://jekyllrb.com/docs
 sitename: 阿木橘子
 baseurl: /
-url: http://liwsen.github.io
+# url: http://liwsen.github.io
+url: http://www.amujz.com
 logo: images/logo.png
 paginate: 1 # 分页数
 paginate_path: "/page:num/"
