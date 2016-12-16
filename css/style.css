@@ -237,6 +237,13 @@ ol.noneStyle,
 .details .info span{font-size: 12px;color:#999;display:inline-block;margin-right:20px;}
 .details .detail{margin-top:30px;line-height: 26px;}
 
+.pagination{text-align: center;padding:10px 0;}
+.pagination span,
+.pagination a{display:inline-block;padding:10px;margin:0 6px;}
+.pagination span{color:#999;}
+.pagination a{border:1px solid #eee;}
+.pagination a:hover{}
+
 @media screen and (max-width: 1440px){
 }
 @media screen and (max-width: 1200px){
