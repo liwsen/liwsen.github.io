@@ -1,9 +1,14 @@
 ---
 layout: default
 ---
+<ul class="categoryTabs">
+{% for category in site.categories %}
+	<li><a href="#{{ category | first }}" data-toggle="tab">{{ category | first }}</a> <span>({{ category | last | size }})</span></li>
+{% endfor %}
+</ul>
 
 {% for category in site.categories %}
-<h2>{{ category | first }} <span>({{ category | last | size }})</span></h2>
+<h2>{{ category | first }}</h2>
 
 <ul class="arc-list">
     {% for post in category.last %}
