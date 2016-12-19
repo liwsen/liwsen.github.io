@@ -4,8 +4,10 @@ layout: default
 
 <div class="content col_6 col_md_8 col_sm_10 col_ssm_12 offset_2 offset_sm_1 offset_ssm_0">
 	<div class="details">
-		<div class="detail">
+		<div class="detail categoryContentBlock">
 
+
+            <h2>{{ page.title }}</h2>
 			<ul class="categoryTabs">
 			{% for category in site.categories %}
 				<li><a href="#{{ category | first }}" data-toggle="tab">{{ category | first }}</a> <span>({{ category | last | size }})</span></li>

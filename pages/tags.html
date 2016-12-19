@@ -5,12 +5,12 @@ title: Tags
 
 <div class="content col_6 col_md_8 col_sm_10 col_ssm_12 offset_2 offset_sm_1 offset_ssm_0">
     <div class="details">
-        <div class="detail">
+        <div class="detail tagsContentBlock">
 
             <h2>{{ page.title }}</h2>
 
             {% for tag in site.tags  %}
-            <h2 id="{{ tag[0] | slugify }}">{{ tag[0] | capitalize }}</h2>
+            <h3 id="{{ tag[0] | slugify }}">{{ tag[0] | capitalize }}</h3>
 
             <ul>
                 {% assign pages_list = tag[1] %}
