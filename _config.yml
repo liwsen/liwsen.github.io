@@ -1,7 +1,11 @@
-# http://jekyll.com.cn/docs/
+# 文档 http://jekyll.com.cn/docs/
 sitename: 阿木橘子
 baseurl: /
 logo: images/logo.png
+# 分页
 paginate: 2
 paginate_path: /page:num/
+# 文章路径格式
 permalink: /:year/:month/:title
+# 默认菜单
+nav_active: home
