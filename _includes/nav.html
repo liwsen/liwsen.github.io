@@ -1,4 +1,4 @@
-<div class="item home"><a href="{{ site.baseurl }}" class="active"><i></i><span>主页</span></a></div>
-<div class="item category"><a href="{{ site.baseurl }}pages/category.html"><i></i><span>分类</span></a></div>
-<div class="item tag"><a href="{{ site.baseurl }}pages/tags.html"><i></i><span>标签</span></a></div>
-<div class="item about"><a href="{{ site.baseurl }}pages/about.html"><i></i><span>关于</span></a></div>
+<div class="item home"><a href="{{ site.baseurl }}"{% if site.pagetype == "home" %} class="active"{% endif %}><i></i><span>主页</span></a></div>
+<div class="item category"><a href="{{ site.baseurl }}pages/category.html"{% if site.pagetype == "category" %} class="active"{% endif %}><i></i><span>分类</span></a></div>
+<div class="item tag"><a href="{{ site.baseurl }}pages/tags.html"{% if site.pagetype == "tags" %} class="active"{% endif %}><i></i><span>标签</span></a></div>
+<div class="item about"><a href="{{ site.baseurl }}pages/about.html"{% if site.pagetype == "about" %} class="active"{% endif %}><i></i><span>关于</span></a></div>
