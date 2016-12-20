@@ -1,3 +1,3 @@
-# liwsen.github.io
-# http://jekyllrb.com/docs
+# Amujz
+
 personal blog
