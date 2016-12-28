@@ -1,4 +1,4 @@
-// javascript:(function(a,b,c,d){a[c]?a[c].show():(d=b.createElement('script'),d.id='huina_zaoan',d.setAttribute('charset','utf-8'),d.src='http://liwsen.oschina.io/otherfile/zaoan.js?'+Math.floor(+new Date/1e7),b.body.appendChild(d))})(window,document,'HN_ZAOAN');
+// javascript:(function(a,b,c,d){a[c]?a[c].show():(d=b.createElement('script'),d.id='huina_zaoan',d.setAttribute('charset','utf-8'),d.src='//liwsen.oschina.io/otherfile/zaoan.js?'+Math.floor(+new Date/1e7),b.body.appendChild(d))})(window,document,'HN_ZAOAN');
 
 // 🍀今天是2016年11月8日
 // 🍁农历十月初九
