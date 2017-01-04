@@ -25,7 +25,7 @@
 
 	ZA.show = function (options) {
 		var DEFAULTS = {
-			yuandan: '2017-1-1',
+			yuandan: '2018-1-1',
 			chunjie: '2017-1-28',
 		};
 		this.options = this.extendObj({}, DEFAULTS, options);
