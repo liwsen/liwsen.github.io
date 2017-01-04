@@ -17,7 +17,7 @@
 🍁 农历 {{lunar}}\n\
 🍂 距离{{yuandanYear}}年元旦还有{{yuandanDays}}天；\n\
 🌴 距离{{chunjieYear}}年春节还有{{chunjieDays}}天；\n\
-🌷 {{yuandanYear}}年我们还可以工作{{workDays}}天；\n\
+🌷 {{thisYear}}年我们还可以工作{{workDays}}天；\n\
 \n\
 {{saying}}\n\
 \n\
@@ -41,6 +41,7 @@
 		Html =  Html.replace('{{date}}', yy+'年'+mm+'月'+dd+'日')
 					.replace('{{week}}', this.getWeekOn())
 					.replace('{{lunar}}', this.GetLunarDay(yy,mm,dd))
+					.replace('{{thisYear}}', ydYear-1)
 					.replace('{{yuandanYear}}', ydYear)
 					.replace('{{chunjieYear}}', cjYear)
 					.replace('{{yuandanDays}}', ydDays)
