@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Javascript函数库
-desc: Javascript函数库
+desc: Javascript函数库汇总，完善中...
 date: 2016-12-19
 author: liwsen
 category: Javascript
-tags: [Javascript, js, timestamp, htmlspecialchars, htmlspecialchars_decode, browserType]
+tags: [Javascript, js]
 img: ''
 finished: true
 ---

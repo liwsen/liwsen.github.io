@@ -3,7 +3,7 @@ sitename: 阿木橘子
 baseurl: /
 logo: images/logo.png
 # 分页
-paginate: 2
+paginate: 20
 paginate_path: /page:num/
 # 文章路径格式
 permalink: /:year/:month/:title
