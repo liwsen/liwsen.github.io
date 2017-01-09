@@ -11,8 +11,9 @@ nav_active: tags
             <h2>{{ page.title }}</h2>
 
             {% for item in site.tags  %}
+            {% var tag = unescape(window.location.search.substr(1).match( new RegExp("(^|&)tag=([^&]*)(&|$)", "i") )[2]); %}
                 <!-- { % if $.query.get("tab") === null || item[0].toLowerCase() === $.query.get("tab").toLowerCase() % } -->
-                    <h3 id="{{ item[0] | slugify }}">{{ item[0] | capitalize }} - {{$.query.get("tag")}}</h3>
+                    <h3 id="{{ item[0] | slugify }}">{{ item[0] | capitalize }} - {{tag}}</h3>
 
                     <ul>
                         {% assign pages_list = item[1] %}
