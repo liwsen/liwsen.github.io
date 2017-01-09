@@ -8,8 +8,8 @@ nav_active: tags
     <div class="details">
         <div class="detail tagsContentBlock">
 
-            <h2>{{ page.title }}</h2>
-            <ul class="tagsTabs">
+            <h2 class="pageTitle">{{ page.title }}</h2>
+            <ul class="tagsTabs tabsList">
             {% for item in site.tags %}
                 <li><a href="#{{ item | first }}">{{ item | first }}</a> <span>({{ item | last | size }})</span></li>
             {% endfor %}
@@ -17,9 +17,9 @@ nav_active: tags
 
             {% for item in site.tags  %}
                 <a name="{{ item[0] | capitalize }}"></a>
-                <h3 id="{{ item[0] | slugify }}">{{ item[0] | capitalize }}</h3>
+                <h3 class="blockHeader" id="{{ item[0] | slugify }}">{{ item[0] | capitalize }}</h3>
 
-                <ul>
+                <ul class="blockContent">
                     {% assign pages_list = item[1] %}
                     {% for post in pages_list reversed %}
                         {% if post.title != null %}
