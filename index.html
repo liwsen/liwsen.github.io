@@ -12,7 +12,7 @@ nav_active: home
 	<div class="lists">
 		{% for post in paginator.posts %}
 			<div class="item row">
-	  			{% if !!post.img %}
+	  			{% if post.img != null || post.img != '' %}
 					<div class="img"><img src="{{ post.img }}" alt="{{ post.title }}"></div>
 	  			{% endif %}
 				<div class="infor">
