@@ -6,7 +6,7 @@ date: 2016-12-19
 author: liwsen
 category: Javascript
 tags: [Javascript, js]
-img: ''
+img: images/upload/js.icon.jpg
 finished: true
 ---
 
