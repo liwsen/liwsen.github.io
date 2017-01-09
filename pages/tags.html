@@ -20,7 +20,7 @@ nav_active: tags
                         {% if group == null or group == post.group %}
                         <li>
                     	<p><a href="{{ post.url }}">
-                    		{{ post.title }}{{getQueryString('tag')}}</a><span class="date"><time datetime="{{ post.date | date:'%d/%m/%Y' }}"> - {{ post.date | date:"%d/%m/%Y" }}</time></span></p>
+                    		{{ post.title }}{{'tag'|getQueryString}}</a><span class="date"><time datetime="{{ post.date | date:'%d/%m/%Y' }}"> - {{ post.date | date:"%d/%m/%Y" }}</time></span></p>
                         </li>
                         {% endif %}
                     {% endif %}
