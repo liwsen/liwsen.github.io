@@ -253,9 +253,9 @@ ul.tabsList li span{font-size: 10px;}
 ul.tabsList li a{}
 ul.tabsList li a:hover{}
 
-h3.blockHeader{}
-ul.blockContent{}
-ul.blockContent li{border-bottom: 1px dashed #ccc;list-style:none;}
+h3.blockHeader{padding:12px;}
+ul.blockContent{padding:12px;}
+ul.blockContent li{border-bottom: 1px dashed #ccc;list-style:none;padding:6px;}
 ul.blockContent li span{font-size: 12px;color:#888;}
 ul.blockContent li a{}
 
