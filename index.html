@@ -12,7 +12,9 @@ nav_active: home
 	<div class="lists">
 		{% for post in paginator.posts %}
 			<div class="item row">
-				<div class="img"><img src="{{ site.baseurl }}images/img_001.jpg" alt=""></div>
+	  			{% if post.img %}
+					<div class="img"><img src="{{ post.img }}" alt="{{ post.title }}"></div>
+	  			{% endif %}
 				<div class="infor">
 					<a href="{{ site.baseurl }}pages/category.html#{{ post.category }}">{{ post.category }}</a>
 					<span>{{ post.date | date:"%d/%m/%Y" }}</span>

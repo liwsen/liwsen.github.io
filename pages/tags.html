@@ -25,8 +25,12 @@ nav_active: tags
                         {% if post.title != null %}
                             {% if group == null or group == post.group %}
                             <li>
-                        	<p><a href="{{ post.url }}#{{ post.title }}">
-                        		{{ post.title }}</a><span class="date"><time datetime="{{ post.date | date:'%d/%m/%Y' }}"> - {{ post.date | date:"%d/%m/%Y" }}</time></span></p>
+                            	<p>
+                                    <a href="{{ post.url }}#{{ post.title }}">
+                            		  {{ post.title }}
+                                    </a>
+                                    <span class="date"><time datetime="{{ post.date | date:'%d/%m/%Y' }}"> - {{ post.date | date:"%d/%m/%Y" }}</time></span>
+                                </p>
                             </li>
                             {% endif %}
                         {% endif %}
