@@ -257,6 +257,7 @@ h3.blockHeader{padding:12px;}
 ul.blockContent{padding:12px;}
 ul.blockContent li{border-bottom: 1px dashed #ccc;list-style:none;padding:6px;}
 ul.blockContent li span{font-size: 12px;color:#888;}
+ul.blockContent li p{margin:0;}
 ul.blockContent li a{}
 
 @media screen and (max-width: 1440px){
