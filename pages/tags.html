@@ -10,8 +10,7 @@ nav_active: tags
 
             <h2>{{ page.title }}</h2>
 
-            {% site.tags.sort('name').each(function(tag){ %}
-            <!-- for tag in site.tags -->
+            {% for tag in site.tags  %}
             <h3 id="{{ tag[0] | slugify }}">{{ tag[0] | capitalize }}</h3>
 
             <ul>
@@ -29,8 +28,7 @@ nav_active: tags
                 {% assign pages_list = nil %}
                 {% assign group = nil %}
             </ul>
-            <!-- endfor -->
-            {% }); %}
+            {% endfor %}
             
         </div>
     </div>
