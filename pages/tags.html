@@ -12,7 +12,7 @@ nav_active: tags
 
             {% for item in site.tags  %}
                 <!-- { % if $.query.get("tab") === null || item[0].toLowerCase() === $.query.get("tab").toLowerCase() % } -->
-                    <h3 id="{{ item[0] | slugify }}">{{ item[0] | capitalize }}{{$.query.get("tab")}}</h3>
+                    <h3 id="{{ item[0] | slugify }}">{{ item[0] | capitalize }}{{$.query.get("tag")}}</h3>
 
                     <ul>
                         {% assign pages_list = item[1] %}
