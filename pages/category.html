@@ -9,10 +9,10 @@ nav_active: category
 		<div class="detail categoryContentBlock">
 
 
-            <h2>{{ page.title }}{{ query.category }}</h2>
+            <h2>{{ page.title }}</h2>
 			<ul class="categoryTabs">
 			{% for category in site.categories %}
-				<li><a href="#{{ category | first }}" data-toggle="tab">{{ category | first }}</a> <span>({{ category | last | size }})</span></li>
+				<li><a href="#{{ category | first }}">{{ category | first }}</a> <span>({{ category | last | size }})</span></li>
 			{% endfor %}
 			</ul>
 

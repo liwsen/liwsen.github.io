@@ -9,6 +9,11 @@ nav_active: tags
         <div class="detail tagsContentBlock">
 
             <h2>{{ page.title }}</h2>
+            <ul class="tagsTabs">
+            {% for item in site.tags %}
+                <li><a href="#{{ item | first }}">{{ item | first }}</a> <span>({{ item | last | size }})</span></li>
+            {% endfor %}
+            </ul>
 
             {% for item in site.tags  %}
                 <!-- { % if $.query.get("tab") === null || item[0].toLowerCase() === $.query.get("tab").toLowerCase() % } -->
